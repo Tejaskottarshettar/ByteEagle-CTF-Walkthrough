@@ -1,8 +1,8 @@
 # ByteEagle-CTF-Walkthrough
-Walkthrough for the Byte Eagle CTF challenge from VulnHub
+Walkthrough for the Byte Eagle CTF challenge 
 # ByteEagle-CTF-Walkthrough
 
-This repository contains a detailed walkthrough of the Byte Eagle CTF challenge from VulnHub. The challenge involves penetrating an Ubuntu 14.04.6 LTS system at 192.168.96.139 to retrieve two flags using reconnaissance, SSH access, and privilege escalation techniques.
+This repository contains a detailed walkthrough of the Byte Eagle CTF challenge. The challenge involves penetrating an Ubuntu 14.04.6 LTS system at 192.168.96.139 to retrieve two flags using reconnaissance, SSH access, and privilege escalation techniques.
 
 ## Walkthrough
 - **Reconnaissance**: Used Nmap and SMBclient to identify open ports and extract files.
