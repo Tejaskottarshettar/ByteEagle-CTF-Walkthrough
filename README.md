@@ -20,5 +20,5 @@ Check out the full walkthrough [here](walkthrough.md).
 - Credential analysis
 
 ## Contact
-Looking for opportunities in cybersecurity! Connect with me on [LinkedIn](www.linkedin.com/in/tejas-kottar-shettar-35522722b) or explore my other projects.
+Looking for opportunities in cybersecurity! Connect with me on [LinkedIn](https://www.linkedin.com/in/tejas-kottar-shettar-35522722b) or explore my other projects.
 
