@@ -1,13 +1,13 @@
-# 🛡️ Byte Eagle CTF -  Privilege Escalation Walkthrough
+#  Byte Eagle CTF -  Privilege Escalation Walkthrough
 
 
-## 📌 Overview
+ Overview
 
 This repository contains a detailed walkthrough of the **Byte Eagle CTF Challenge**, focused on Linux enumeration, privilege escalation, and flag retrieval using SSH and system misconfigurations. The challenge involved accessing a vulnerable Ubuntu machine, discovering credentials, escalating privileges, and capturing flags.
 
----
 
-## 🧑‍💻 Target Information
+
+### Target Information
 
 - **Machine IP**: `192.168.96.139`
 - **OS**: Ubuntu 14.04.6 LTS
@@ -16,7 +16,7 @@ This repository contains a detailed walkthrough of the **Byte Eagle CTF Challeng
 
 ---
 
-## 🛠️ Tools Used
+### Tools Used
 
 - `nmap`
 - `smbclient`
@@ -26,9 +26,9 @@ This repository contains a detailed walkthrough of the **Byte Eagle CTF Challeng
 
 ---
 
-## 🚶 Step-by-Step Walkthrough
+### Step-by-Step Walkthrough
 
-### 🔍 Step 1: Reconnaissance with Nmap
+### Step 1: Reconnaissance with Nmap
 
 
 nmap 192.168.96.139 -sV -sC
@@ -41,7 +41,7 @@ Discovered open ports:
 
 ---
 
-### 📁 Step 2: Enumerate SMB Shares
+### Step 2: Enumerate SMB Shares
 
 smbclient -L 192.168.96.139 -N
 smbclient //192.168.96.139/wave -N
@@ -51,7 +51,7 @@ get message_from_aveng.txt
 
 ---
 
-### 🔐 Step 3: Decode FLAG1
+### Step 3: Decode FLAG1
 
 
 echo "<base64-string>" | base64 -d
@@ -75,7 +75,7 @@ ssh wavex@192.168.96.139
 
 ---
 
-### 🧱 Step 5: Find Writable Directories
+###  Step 5: Find Writable Directories
 
 
 find / -writable -type d 2>/dev/null
@@ -105,7 +105,7 @@ Revealed:
 
 ---
 
-### 👤 Step 7: Switch User & Gain Root Access
+###  Step 7: Switch User & Gain Root Access
 
 
 su aveng
@@ -117,7 +117,7 @@ sudo su
 
 ---
 
-### 📂 Step 8: Navigate to Root Directory & Retrieve Final Flag
+###  Step 8: Navigate to Root Directory & Retrieve Final Flag
 
 
 cd /root
@@ -134,11 +134,11 @@ ASCII Translation:
 - 84 → T
 - 70 → F
 
-✅ Final Flag: `WELCOME TO CTF`
+Final Flag: `WELCOME TO CTF`
 
 ---
 
-## ✅ Conclusion
+##  Conclusion
 
 The Byte Eagle CTF demonstrated practical experience in:
 
@@ -152,14 +152,14 @@ The Byte Eagle CTF demonstrated practical experience in:
 ---
 
 
-## 🙋 About Me
+##  About Me
 
 I'm **Tejas Kottarshettar**, an aspiring cybersecurity professional with interests in:
 - Web Application Penetration Testing
 - Red Team Operations
 - CTFs & Offensive Security
 
-📫 Let's connect:
+ Let's connect:
 - [LinkedIn](www.linkedin.com/in/tejas-kottar-shettar-35522722b)
 
 
